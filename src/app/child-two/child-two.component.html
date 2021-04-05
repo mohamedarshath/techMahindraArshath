@@ -1,0 +1,11 @@
+<div class="row padding-30">
+    <div class="col-12" *ngFor="let card of numberArrayTwo">
+        <div class="row margin-2">
+            <div class="card boxes col-1 border-radius-0" [ngStyle]="{'background-color':card.class}"></div>
+            <div class="card boxes text-center col-11 border-radius-0 slabColor">
+                {{ card.number}}
+            </div>
+        </div>
+    </div>
+</div>
+<h3 class="text-center">Child component 2</h3>

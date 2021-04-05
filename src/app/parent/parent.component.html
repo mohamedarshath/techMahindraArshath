@@ -1,0 +1,13 @@
+<h1 class="text-center">Parent component</h1>
+<div class="text-center">
+    <button type="button" class="btn btn-primary margin-15" (click)="shuffleArray()" [disabled]="childOneBoolean && childTwoBoolean">Shuffle</button>
+    <button type="button" class="btn btn-primary margin-15" (click)="sortArray()" [disabled]="!childOneBoolean && !childTwoBoolean">Sort</button>
+</div>
+<div class="row">
+    <div class="col-6">
+        <app-child-one [numberArrayOne]="childOneArray"></app-child-one>
+    </div>
+    <div class="col-6">
+        <app-child-two [numberArrayTwo]="childTwoArray"></app-child-two>
+    </div>
+</div>
